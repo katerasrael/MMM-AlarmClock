@@ -156,16 +156,43 @@ Module.register('MMM-AlarmClock', {
         };
     },
 
-    newAlarm: function() {
+    Telegram_NewAlarm: function() {
+        // TODO
         // your code for a new alarm
+    },
+
+    Telegram_NextAlarm: function() {
+        // TODO
+        // your code for displaying the next active alarm
+    },
+
+    Telegram_ListAlarms: function() {
+        // TODO
+        // your code to list all the alarms
+    },
+
+    Telegram_StopAlarms: function() {
+        this.resetAlarmClock()
     },
 
     getCommands: function(commander) {
         return [
           {
-            command: 'newalarm',
-            callback: 'newAlarm'
-          }
+            command: 'alarm-new',
+            callback: 'Telegram_NewAlarm'
+          },
+          {
+            command: 'alarm-next',
+            callback: 'Telegram_NextAlarm'
+          },
+          {
+            command: 'alarm-list',
+            callback: 'Telegram_ListAlarms'
+          },
+          {
+            command: 'alarm-stop',
+            callback: 'Telegram_StopAlarms'
+          },
         ]
       },
 

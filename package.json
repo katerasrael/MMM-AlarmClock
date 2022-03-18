@@ -8,18 +8,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fewieden/MMM-AlarmClock.git"
+    "url": "git+https://github.com/katerasrael/MMM-AlarmClock.git"
   },
   "keywords": [
     "MagicMirror",
     "alarm clock"
   ],
   "author": "fewieden",
+  "author": "katerasrael",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/fewieden/MMM-AlarmClock/issues"
+    "url": "https://github.com/katerasrael/MMM-AlarmClock/issues"
   },
-  "homepage": "https://github.com/fewieden/MMM-AlarmClock#readme",
+  "homepage": "https://github.com/katerasrael/MMM-AlarmClock#readme",
   "devDependencies": {
     "eslint": "^5.11.0",
     "eslint-config-recommended": "^4.0.0",

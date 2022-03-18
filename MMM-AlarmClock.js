@@ -156,6 +156,19 @@ Module.register('MMM-AlarmClock', {
         };
     },
 
+    newAlarm: function() {
+        // your code for a new alarm
+    },
+
+    getCommands: function(commander) {
+        return [
+          {
+            command: 'newalarm',
+            callback: 'newAlarm'
+          }
+        ]
+      },
+
     /**
      * @function start
      * @description Sets first alarm and creates interval to check the alarm event.

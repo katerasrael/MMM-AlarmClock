@@ -165,6 +165,7 @@ Module.register('MMM-AlarmClock', {
         // TODO
         // your code for displaying the next active alarm
         let msg = this.next.time + ": " + this.next.title + "; " + this.next.message;
+        console.log(msg);
         handler.reply("TEXT", msg);
     },
 

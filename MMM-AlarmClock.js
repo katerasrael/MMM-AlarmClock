@@ -181,19 +181,19 @@ Module.register('MMM-AlarmClock', {
     getCommands: function(commander) {
         return [
           {
-            command: 'alarm-new',
+            command: 'alarmnew',
             callback: 'Telegram_NewAlarm'
           },
           {
-            command: 'alarm-next',
+            command: 'alarmnext',
             callback: 'Telegram_NextAlarm'
           },
           {
-            command: 'alarm-list',
+            command: 'alarmlist',
             callback: 'Telegram_ListAlarms'
           },
           {
-            command: 'alarm-stop',
+            command: 'alarmstop',
             callback: 'Telegram_StopAlarms'
           },
         ]

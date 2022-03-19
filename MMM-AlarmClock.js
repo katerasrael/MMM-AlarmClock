@@ -158,7 +158,7 @@ Module.register('MMM-AlarmClock', {
 
     Telegram_NewAlarm: function(command, handler) {
         // TODO
-        // your code for a new alarm
+        // code for a new alarm
     },
 
     Telegram_NextAlarm: function(command, handler) {
@@ -166,12 +166,12 @@ Module.register('MMM-AlarmClock', {
         // your code for displaying the next active alarm
         let msg = this.next.time + ": " + this.next.title + "; " + this.next.message;
         console.log(msg);
-        handler.reply("TEXT", "TEST");
+        handler.reply("TEXT", msg);
     },
 
     Telegram_ListAlarms: function(command, handler) {
         // TODO
-        // your code to list all the alarms
+        // code to list all the alarms
     },
 
     Telegram_StopAlarms: function(command, handler) {

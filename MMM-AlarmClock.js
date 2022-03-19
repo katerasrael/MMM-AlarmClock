@@ -172,6 +172,13 @@ Module.register('MMM-AlarmClock', {
     Telegram_ListAlarms: function(command, handler) {
         // TODO
         // code to list all the alarms
+        console.log(this.config.alarms.length);
+
+        for (let i = 0; i < this.config.alarms.length; i += 1) {
+            let msg = i + ": " + this.config.alarms[i].time + ": " + this.config.alarms[i].title + "; " + this.config.alarms[i].message;
+            console.log(msg);
+            handler.reply("TEXT", msg);
+        }
     },
 
     Telegram_StopAlarms: function(command, handler) {

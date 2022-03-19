@@ -164,6 +164,8 @@ Module.register('MMM-AlarmClock', {
     Telegram_NextAlarm: function() {
         // TODO
         // your code for displaying the next active alarm
+        let msg = this.next.time + ": " + this.next.title + "; " + this.next.message
+        handler.reply("TEXT", msg)
     },
 
     Telegram_ListAlarms: function() {

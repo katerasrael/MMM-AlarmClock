@@ -156,25 +156,25 @@ Module.register('MMM-AlarmClock', {
         };
     },
 
-    Telegram_NewAlarm: function() {
+    Telegram_NewAlarm: function(command, handler) {
         // TODO
         // your code for a new alarm
     },
 
-    Telegram_NextAlarm: function() {
+    Telegram_NextAlarm: function(command, handler) {
         // TODO
         // your code for displaying the next active alarm
         let msg = this.next.time + ": " + this.next.title + "; " + this.next.message;
         console.log(msg);
-        handler.reply("TEXT", msg);
+        handler.reply("TEXT", "TEST");
     },
 
-    Telegram_ListAlarms: function() {
+    Telegram_ListAlarms: function(command, handler) {
         // TODO
         // your code to list all the alarms
     },
 
-    Telegram_StopAlarms: function() {
+    Telegram_StopAlarms: function(command, handler) {
         this.resetAlarmClock()
     },
 
